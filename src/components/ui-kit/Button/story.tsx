@@ -1,6 +1,5 @@
 import type {ComponentMeta, ComponentStory, Meta, StoryObj} from '@storybook/react';
 import Button from "./Index";
-import './styles.module.scss';
 
 
 export default {

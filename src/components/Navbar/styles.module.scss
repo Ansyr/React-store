@@ -1,7 +1,7 @@
 .navbar{
   width: 100%;
   height: 40px;
-  background-color: var(--primary-color);
+  background-color: var(--head-clr);
   display: flex;
   align-items: center;
   padding: 30px;
@@ -13,5 +13,18 @@
 
     margin-right: auto;
     margin-left: 150px;
+  }
+}
+
+
+.themeBtn{
+  margin-left: 20px;
+}
+.LinkNav{
+  padding: 11px 20px;
+  color: var(--secondary-color);
+  &:hover{
+    transition: all 0.3s ease-in;
+    opacity: 0.7;
   }
 }

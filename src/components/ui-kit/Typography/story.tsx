@@ -1,7 +1,7 @@
 import {ComponentMeta, ComponentStory} from "@storybook/react";
 import React from "react";
 import {Typography} from "./Index";
-import './styles.module.scss';
+
 
 export default {
     title: 'ui-kit/Typography',

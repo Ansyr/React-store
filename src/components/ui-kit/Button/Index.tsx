@@ -12,6 +12,7 @@ interface ButtonOwnProps<E extends ElementType> extends ButtonHTMLAttributes<HTM
     theme?: ButtonTheme
     fullWidth?: boolean;
     disabled?: boolean;
+    classNames?:string;
     as?: E
 };
 
@@ -39,7 +40,7 @@ export const Button = <E extends ElementType = typeof defaultElement>(props: But
         {[styles.disabled]: disabled})
     const TagName = as || defaultElement
     return (
-        <TagName className={className} {...rest} disabled={disabled}>
+        <TagName className={clsx(className,props.classNames)} {...rest} disabled={disabled}>
             {children}
         </TagName>
     );

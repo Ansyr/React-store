@@ -7,6 +7,7 @@ const MainPage = () => {
     return (
         <div className={styles.mainPage}>
             <Navbar></Navbar>
+
         </div>
     );
 };

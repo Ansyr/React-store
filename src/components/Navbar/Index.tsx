@@ -4,25 +4,26 @@ import clsx from "clsx";
 import {Typography} from "../ui-kit/Typography";
 import Button from "../ui-kit/Button/Index";
 import {useTheme} from "@/hooks/useTheme";
+import {Link} from 'react-router-dom'
 
-const NavbarLinks = ['Main', 'Store', 'Cart'];
+const NavbarLinks = [{name:'Main', path:'/main'},{name:'Store', path:'/store'},{name:'Cart', path:'/cart'}];
 
 interface NavbarProps {
     className?: string;
 }
 
 const Navbar = ({className}: NavbarProps) => {
-    const {theme,switchTheme} = useTheme()
+    const {switchTheme} = useTheme()
     return (
-        <header className={clsx(styles.navbar,className,theme)}>
+        <header className={clsx(styles.navbar,className)}>
             <Typography as={'h1'} color={'secondary'}>Logo</Typography>
             <nav>
 
-                {NavbarLinks.map((navBarLink,id) => <Button as={'a'} size={'small'} key={id}>{navBarLink}</Button>)}
+                {NavbarLinks.map((navBarLink,id) => <Link to={navBarLink.path} className={styles.LinkNav} key={id}>{navBarLink.name}</Link>)}
 
             </nav>
-            <Button as={'button'} theme={'circle'} size={'medium'} onClick={switchTheme}/>
             <Button as={'button'} variant={'secondary'} theme={'contained'} size={'small'}>Login</Button>
+            <Button as={'button'} theme={'circle'} size={'medium'} onClick={switchTheme} classNames={styles.themeBtn}/>
         </header>
     );
 };

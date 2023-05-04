@@ -1,7 +1,8 @@
 import MainPage from './index'
 import './styles.module.scss';
 import {ComponentMeta, ComponentStory} from "@storybook/react";
-
+import {ThemeDecorator} from "@/config/storybook/themeDecorator";
+import {Theme} from "@/providers/Theme";
 
 
 export default {
@@ -19,6 +20,13 @@ export default {
 
 } as ComponentMeta<typeof MainPage>
 const NavbarTemplate: ComponentStory<typeof MainPage> = (args) => <MainPage/>
-export const Primary = NavbarTemplate.bind({});
+export const PrimaryLight = NavbarTemplate.bind({});
 
-Primary.args = {}
+PrimaryLight.args = {}
+PrimaryLight.decorators=[ThemeDecorator(Theme.LIGHT)]
+
+
+export const PrimaryBlack = NavbarTemplate.bind({});
+
+PrimaryBlack.args = {}
+PrimaryBlack.decorators=[ThemeDecorator(Theme.DARK)]

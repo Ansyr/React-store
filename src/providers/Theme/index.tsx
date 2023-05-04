@@ -18,7 +18,7 @@ export const ThemeContext = createContext<ThemeContextProps>({})
 
 const defaultTheme = localStorage.getItem('theme') as Theme || Theme.LIGHT;
 const ThemeProvider = ({children,initTheme}: ThemeProviderProps) => {
-    const [theme,setTheme] = useState<Theme>(defaultTheme)
+    const [theme,setTheme] = useState<Theme>(initTheme || defaultTheme)
     return (
         <ThemeContext.Provider value={{setTheme,theme}}>{children}</ThemeContext.Provider>
     );
