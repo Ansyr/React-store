@@ -1,0 +1,38 @@
+{
+  "name": "try-ui-kit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "clsx": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "7.0.7",
+    "@storybook/addon-interactions": "7.0.7",
+    "@storybook/addon-links": "7.0.7",
+    "@storybook/addon-styling": "^1.0.5",
+    "@storybook/blocks": "7.0.7",
+    "@storybook/cli": "^7.0.7",
+    "@storybook/react": "7.0.7",
+    "@storybook/react-vite": "7.0.7",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "prop-types": "15.8.1",
+    "sass": "^1.62.1",
+    "storybook": "^7.0.7",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
