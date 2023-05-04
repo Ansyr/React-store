@@ -65,6 +65,14 @@ SecondaryLarge.args = {
 }
 
 
+export const CircleMedium = ButtonTemplate.bind({})
+CircleMedium.args = {
+    children: '!',
+    theme: 'circle',
+    size: "large",
+    variant: 'secondary'
+}
+
 export const LinkSmall = ButtonTemplate.bind({})
 
 LinkSmall.args = {

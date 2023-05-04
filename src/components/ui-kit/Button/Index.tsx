@@ -3,8 +3,8 @@ import clsx from "clsx";
 import styles from './styles.module.scss'
 
 type ButtonVariant = 'primary' | 'secondary' | 'link';
-type ButtonSize = 'small' | 'medium' | 'large';
-type ButtonTheme = 'outline' | 'contained' | 'disabled';
+type ButtonSize = 'small' | 'medium' | 'large' ;
+type ButtonTheme = 'outline' | 'contained' | 'disabled'|'circle';
 
 interface ButtonOwnProps<E extends ElementType> extends ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: ButtonVariant;

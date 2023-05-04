@@ -70,3 +70,11 @@
   opacity: 0.5;
   pointer-events: none;
 }
+
+.circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--themes-clr);
+  padding: 0;
+}
