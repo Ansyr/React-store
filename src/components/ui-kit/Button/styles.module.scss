@@ -1,0 +1,72 @@
+@import "../../../styles/variables";
+.btn{
+  border-radius: 5px;
+  display: inline-block;
+  &:hover{
+    opacity: 0.8;
+    fill-opacity: 0.8;
+    stroke-opacity: 0.8;
+  }
+}
+
+.primary{
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  &:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: all 0.6s ease-out;
+  }
+}
+
+.secondary{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.outline{
+  border: none;
+  background: none;
+  &:hover{
+    opacity: 0.8;
+    background-color: transparent;
+    color: var(--secondary-color);
+    transition: all 0.2s ease-out;
+  }
+}
+
+.contained{
+  border: 2px solid var(--primary-color);
+}
+
+
+.link{
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+
+}
+
+.small{
+  font-size: var(--small-size);
+  padding: 10px 16px;
+}
+
+.medium{
+  font-size: var(--medium-size);
+  padding: 11px 20px;
+}
+
+.large{
+  font-size: var(--large-size);
+  padding: 12px 24px;
+}
+
+.fullWidth{
+  width: 100%;
+}
+
+.disabled{
+  opacity: 0.5;
+  pointer-events: none;
+}
