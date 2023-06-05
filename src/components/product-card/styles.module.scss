@@ -1,0 +1,25 @@
+.productCard{
+  max-width: 316px;
+
+  img{
+    width: 100%;
+  }
+  .imgCard{
+    position: relative;
+  }
+  .icon{
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+
+  }
+
+  .cardText{
+    margin: 20px;
+  }
+  .priceText{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+}

@@ -8,9 +8,10 @@ function App() {
     const {theme} = useTheme()
   return (
     <div className={clsx('app',theme)}>
-        <Container >
+        <div className={"appPage"}>
             <Main/>
-        </Container>
+        </div>
+
     </div>
   )
 }

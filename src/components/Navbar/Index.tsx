@@ -4,7 +4,7 @@ import clsx from "clsx";
 import {Typography} from "../ui-kit/Typography";
 import Button from "../ui-kit/Button/Index";
 import {useTheme} from "@/hooks/useTheme";
-import {Link} from 'react-router-dom'
+import {Link} from "react-router-dom"
 
 const NavbarLinks = [{name:'Main', path:'/main'},{name:'Store', path:'/store'},{name:'Cart', path:'/cart'}];
 
@@ -16,7 +16,7 @@ const Navbar = ({className}: NavbarProps) => {
     const {switchTheme} = useTheme()
     return (
         <header className={clsx(styles.navbar,className)}>
-            <Typography as={'h1'} color={'secondary'}>Logo</Typography>
+            <Typography as={'h1'} color={'secondary'} size={"big"}>Logo</Typography>
             <nav>
 
                 {NavbarLinks.map((navBarLink,id) => <Link to={navBarLink.path} className={styles.LinkNav} key={id}>{navBarLink.name}</Link>)}

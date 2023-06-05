@@ -1,4 +1,13 @@
-.mainPage{
-  height: 100vh;
-  background: var(--head-clr);
+.mainContent{
+  margin-top: 60px;
+  background: var(--primary-color);
+  .listItems{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.imgBanner{
+  width: 100%;
 }

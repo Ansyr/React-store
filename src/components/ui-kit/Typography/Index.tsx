@@ -7,6 +7,7 @@ type TextColor = 'primary' | 'secondary';
 interface TextOwnProps<E extends ElementType>{
     size?:TextSize;
     color?:TextColor;
+    classNames?: string;
     as?: E
 }
 
@@ -15,8 +16,8 @@ type TextProps<E extends ElementType> = TextOwnProps<E> & Omit<ComponentProps<E>
 const defaultElement = 'div';
 
 export const Typography = <E extends ElementType = typeof defaultElement>(props: TextProps<E>) => {
-    const {children,size = 'small',color = 'primary', as, ...rest} = props
+    const {children,size = 'small',color = 'primary', as,classNames, ...rest} = props
     const TagName = as || defaultElement;
-    const className = clsx(styles.text,styles[size],styles[color])
+    const className = clsx(styles.text,styles[size],styles[color],classNames)
     return <TagName className={className} {...rest}>{children}</TagName>
 }

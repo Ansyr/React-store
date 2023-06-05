@@ -1,6 +1,7 @@
 .card{
   background-size: cover;
   background-position: center;
+  background-color: transparent;
 }
 
 .primary{
@@ -12,7 +13,7 @@
 }
 
 .outline{
-  border: 1px solid red;
+  border-radius: 5px;
 }
 
 .small{
@@ -20,7 +21,7 @@
 }
 
 .medium{
-  padding: 20px 25px;
+  padding: 0 0 20px 0;
 }
 
 .large{

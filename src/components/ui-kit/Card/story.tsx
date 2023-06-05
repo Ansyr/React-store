@@ -30,7 +30,7 @@ PrimarySmall.args = {
 export const PrimaryMedium = CardTemplate.bind({});
 
 PrimaryMedium.args = {
-    children: <img src={"https://e7.pngegg.com/pngimages/122/393/png-clipart-man-wearing-white-crew-neck-t-shirt-and-black-shorts-t-shirt-sportswear-clothing-sports-wear-tshirt-white.png"}/>,
+    children: <img src={"https://images.asos-media.com/products/only-sons-oversized-t-shirt-with-japanese-print-in-black/204647625-1-black?$n_320w$&wid=317&fit=constrain"}/>,
     size: 'medium',
     theme: 'outline'
 }
@@ -50,5 +50,4 @@ FullWidth.args = {
     children:'12312312',
     size: 'medium',
     theme: 'outline',
-    fullWidth: true,
 }
