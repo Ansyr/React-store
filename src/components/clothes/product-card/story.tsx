@@ -1,5 +1,5 @@
 import {ComponentMeta, ComponentStory} from "@storybook/react";
-import ProductCard from "@/components/product-card/index";
+import ProductCard from "@/components/clothes/product-card/index";
 
 export default {
     title: 'ui-kit/ProductCard',

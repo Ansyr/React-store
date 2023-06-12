@@ -14,7 +14,7 @@ const ProductCard = () => {
                 <div className={styles.imgCard}>
                     <img src="https://images.asos-media.com/products/only-sons-oversized-t-shirt-with-japanese-print-in-black/204647625-1-black?$n_320w$&wid=317&fit=constrain" alt=""/>
                     <span className={styles.icon}>
-                        <Heart></Heart>
+                        <Heart/>
                     </span>
                 </div>
 

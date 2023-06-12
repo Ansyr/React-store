@@ -55,6 +55,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: var(--secondary-color);
 }
 
 a:hover {
